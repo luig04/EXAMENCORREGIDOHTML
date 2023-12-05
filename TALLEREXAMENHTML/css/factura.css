@@ -1,0 +1,23 @@
+body {
+    background-color: #000000;
+    color: #fff;
+    font-family: "Lucida Console", Monaco, monospace;
+    margin: 0;
+    padding: 0;
+}
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #e2e2e2;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(141, 141, 141, 0.596);
+        }
+

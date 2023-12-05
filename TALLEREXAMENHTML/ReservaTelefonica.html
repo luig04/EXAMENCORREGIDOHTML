@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/reservatl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL.CH</title>
+</head>
+<body>
+    <section class="main-section">
+        <h2>Realizar Reserva</h2>
+        <form action="procesar_reserva.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="numero_tarjeta">Número de Tarjeta de Crédito:</label>
+            <input type="text" id="numero_tarjeta" name="numero_tarjeta" required>
+            <label for="tipo_reserva">Preferencia de Reserva:</label>
+            <select id="tipo_reserva" name="tipo_reserva" required> 
+            <option value="dormir">Dormir únicamente</option>
+            <option value="media_pension">Media Pensión</option>
+            <option value="pension_completa">Pensión Completa</option>
+            </select>
+            <label for="fecha">Fecha de llegada:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="noches">Número de noches:</label>
+            <input type="number" id="noches" name="noches" min="1" required>
+            <label for="habitación_mostrador">habitación en el mostrador del hotel:</label>
+            <input type="checkbox" id="habitación_mostrador" name="habitación_mostrador">
+            <label for="preferencia_fumador">Preferencia de Fumador:</label>
+            <input type="checkbox" id="preferencia_fumador" name="preferencia_fumador">
+            <button type="submit">Reservar</button>
+            </form>
+            <p>Si en la fecha de reserva no se
+presenta el cliente, se genera una factura que se envía a la compañía de tarjetas de crédito.</p>
+</body>
+</html>
